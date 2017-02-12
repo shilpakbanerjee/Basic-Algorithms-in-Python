@@ -38,4 +38,6 @@
 
 - *primitive_calculator.py*	
 
-- *sorting.py*
+- *quick_sort.py* : Implementation of the Quick Sort algorithm
+
+- *selection_sort.py* : Implementation of the Selection Sort algorithm
