@@ -1,14 +1,11 @@
-# Uses python3
 import sys
 import random
 
 def partition3(a, l, r):
-    #write your code here
     x = a[l]
     m1 = l
     m2 = l+1
     for i in range(l + 1, r + 1):
-        #print(a, l, r)
         if a[i] < x:
             if m2 == i:
                 a[m2], a[m1] = a[m1], a[m2]
@@ -18,10 +15,7 @@ def partition3(a, l, r):
             m2 +=1            
         elif a[i] == x:
             m2 += 1
-            a[m2-1], a[i] = a[i], a[m2-1]
-        #print(m1, m2)
-    #a[l], a[m1-1] = a[m1-1], a[l]
-    #m1 = m1 -1
+            a[m2-1], a[i] = a[i], a[m2-1]    
     return m1, m2
 
 
@@ -37,14 +31,13 @@ def partition2(a, l, r):
 
 
 def randomized_quick_sort(a, l, r):
-    #print(a)
     if l >= r:
         return
     k = random.randint(l, r)
     a[l], a[k] = a[k], a[l]
-    #use partition3
+    
     m1, m2= partition3(a, l, r)
-    #print(a)
+    
     randomized_quick_sort(a, l, m1-1);
     randomized_quick_sort(a, m2, r);
 
