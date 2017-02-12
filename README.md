@@ -41,3 +41,5 @@
 - *quick_sort.py* : Implementation of the Quick Sort algorithm
 
 - *selection_sort.py* : Implementation of the Selection Sort algorithm
+
+- *merge_sort.py* : Implementation of the Merge Sort algorithm
